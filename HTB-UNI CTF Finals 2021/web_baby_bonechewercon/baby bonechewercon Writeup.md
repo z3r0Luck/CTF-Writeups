@@ -14,7 +14,7 @@ HTB{b3nt_tw1g_t0_my_will!}
 
 Starting with reading the description of the challenge it notified us about SSTI feng shui, so it's probably a server side template injection vulnerability
 
-![challinfo](https://github.com/z3r0Luck/CTF-Writeups/blob/master/HTB-UNI%20CTF%20Finals%202021/web_baby_bonechewercon/1.png.png "Challenge Info")
+![challinfo](https://github.com/z3r0Luck/CTF-Writeups/blob/master/HTB-UNI%20CTF%20Finals%202021/web_baby_bonechewercon/1.png "Challenge Info")
 
 Looking at the files we see PHP is used with Twig, which is a is a template engine for PHP. The web page provide us a form to register a name. Registering a name we get a greeting response with the value we passed to it.
 
