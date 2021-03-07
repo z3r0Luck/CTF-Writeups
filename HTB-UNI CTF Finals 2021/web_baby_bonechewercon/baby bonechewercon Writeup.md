@@ -10,7 +10,7 @@
 HTB{b3nt_tw1g_t0_my_will!}
 ``
 
-##Solution
+## Solution
 
 Starting with reading the description of the challenge it notified us about SSTI feng shui, so it's probably a server side template injection vulnerability
 
