@@ -3,14 +3,19 @@
 ## User
 
 Starting with port scanning using nmap.
+
 ![nmap_scan](1.png)
+
 We see a lot of ports open. In port 80 we see an empty webpage, fuzzing didn't help too. In 3128 there is http-proxy which might be useful later. We can't find anything interesting on most open ports. Searching the ports one by one we get an interesting result at the first link we find about 24007 port.
+
 ![google_glusterfs](2.png)
+
 GlusterFS is a scale-out network-attached distributed storage file system. So we can mount the remote filesystem to our machine . We can install it using apt. Using gluster command we can list volumes from the remote machine.
 
 ` gluster --remote-host=10.129.96.25 volume list `
 
 ![gluster_list](3.png)
+
 With ` volume info ` we can see more informations about the volumes. Now we mount the volumes to our system to enumerate for more information.
 
 ` mount -t glusterfs 10.129.96.25:/vol1 /mnt/gfsvol/ `
